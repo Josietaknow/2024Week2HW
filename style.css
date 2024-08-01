@@ -1,0 +1,284 @@
+/* 共通 */
+body {
+    font-family: "Bruno Ace SC", serif;
+    line-height: 1.5;
+    font-size: 16px;
+    background-color: #000;
+}
+
+img {
+    vertical-align: middle;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    /* outline: solid 1px; */
+}
+
+a {
+    color: inherit;
+    /* 加上這個才有套用text-gray */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00FFA3;
+}
+
+.container {
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.navitem li {
+    /* 不確定選單的padding是否應該設定在這? */
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+
+.navitem li a:link {
+    display: block;
+}
+
+.banner {
+    margin-top: 72px;
+    margin-bottom: 32px;
+}
+
+
+/* William的span 這是助教的方法 */
+.banner-name {
+    display: block;
+    text-align: right;
+}
+
+.intro {
+    background-image: url(img/background-img.png);
+    background-repeat: no-repeat;
+}
+
+.intro-text {
+    padding-top: 36px;
+    padding-bottom: 32px;
+}
+
+.intro-desc {
+    width: 526px;
+}
+
+.card {
+    width: 636px;
+    gap: 24px;
+}
+
+.carditem {
+    width: calc(50% - 12px);
+    padding: 16px;
+    flex-wrap: wrap;
+    border: 1px solid #E3E3E3;
+}
+
+
+.aboutme {
+    width: 526px;
+}
+
+.contactme {
+    background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+
+.socialicon li img:hover {
+    box-shadow: 0px 0px 16px 3px #9094FFE5;
+    border-radius: 40px;
+}
+
+.project-title{
+    width: 746px;
+}
+
+.gap-16 {
+    gap: 16px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-24 {
+    gap: 24px;
+}
+
+.gap-28 {
+    gap: 28px;
+}
+
+
+/* 基本設定 字體顏色 */
+
+.h1 {
+    font-size: 128px;
+}
+
+.h2 {
+    font-size: 40px;
+}
+
+.fs-0 {
+    font-size: 64px;
+}
+
+.fs-1 {
+    font-size: 32px;
+}
+
+.fs-2 {
+    font-size: 24px;
+}
+
+.fs-3 {
+    font-size: 20px;
+}
+
+.fs-4 {
+    font-size: 16px;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-primary {
+    color: #00FFA3;
+}
+
+.text-darkgray {
+    color: #15161D;
+}
+
+.text-gray {
+    color: #D1D1D1;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+/* padding margin */
+.pb-4 {
+    padding-bottom: 4px;
+}
+
+.pb-16 {
+    padding-bottom: 16px;
+}
+
+.pl-24 {
+    padding-left: 24px;
+}
+
+.pl-12 {
+    padding-left: 12px;
+}
+
+.py-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.py-96 {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.py-160 {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.ml-24 {
+    margin-left: 24px;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mb-36 {
+    margin-bottom: 36px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+/* 基本設定 flex block */
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.align-content-flex-start {
+    align-content: flex-start;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.align-item-start {
+    align-items: start;
+}
+
+.align-item-flex-end {
+    align-items: flex-end;
+}
+
+.d-flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* 元件類 */
+.button {
+    border-radius: 32px;
+    padding: 12px 24px;
+}
