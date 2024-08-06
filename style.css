@@ -78,6 +78,8 @@ a:hover {
     padding: 16px;
     flex-wrap: wrap;
     border: 1px solid #E3E3E3;
+    box-shadow: 4px 4px 4px 0px #00000014;
+    /* 有陰影 */
 }
 
 
@@ -94,7 +96,7 @@ a:hover {
     border-radius: 40px;
 }
 
-.project-title{
+.project-title {
     width: 746px;
 }
 
@@ -194,6 +196,7 @@ a:hover {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+
 .py-96 {
     padding-top: 96px;
     padding-bottom: 96px;

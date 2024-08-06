@@ -1,67 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Work2</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro:ital@0;1&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- https://www.figma.com/design/7t6ft6HEHeWkpFs7OQrdKp/2023-%E5%88%87%E7%89%88%E5%A4%8F%E5%AD%A3%E7%8F%AD-W2---%E5%80%8B%E4%BA%BA%E7%B6%B2%E9%A0%81?node-id=0-1 -->
     <nav class="nav">
-        <div class="container">
-            <ul class="navitem d-flex justify-content-space-between align-content-center align-item-center text-gray">
-                <li><a href="#">WILLIAM LEE</a></li>
-                <li><a href="#">BASED IN TAIWAN</a></li>
-                <li><a href="#">CURRENTLY FRONT END<br> ENGINEER AT HEXSCHOOL</a></li>
-                <li><a href="#">CONTACT ME</a></li>
-            </ul>
-        </div>
+      <div class="container">
+        <ul
+          class="navitem d-flex justify-content-space-between align-content-center align-item-center text-gray"
+        >
+          <!-- nav 區塊除了「CONTACT ME」，其餘都比較偏純文字，非連結，可以不使用 a 標籤 -->
+          <li>WILLIAM LEE</li>
+          <li>BASED IN TAIWAN</li>
+          <li>
+            CURRENTLY FRONT END<br />
+            ENGINEER AT HEXSCHOOL
+          </li>
+          <li><a href="#">CONTACT ME</a></li>
+        </ul>
+      </div>
     </nav>
     <div class="banner">
-        <div class="container d-flex align-item-center">
-            <img src="img/people.png" alt="people picture">
-            <div class="d-flex flex-direction-column ml-24">
-                <h1 class="text-white fs-0">
-                    Hi <br>
-                    I’m a front-end<br> developer
-                    <span class="text-primary h1 d-block text-right">William</span>
-                </h1>
-                <a href="#" class="ml-auto bg-white button text-black">contact me <img src="img/arrow_outward.svg"
-                        alt="arrow"></a>
-            </div>
+      <div class="container d-flex align-item-center">
+        <img src="img/people.png" alt="people picture" />
+        <div class="d-flex flex-direction-column ml-24">
+          <h1 class="text-white fs-0">
+            Hi <br />
+            I’m a front-end<br />
+            developer
+            <span class="text-primary h1 d-block text-right">William</span>
+          </h1>
+          <a href="#" class="ml-auto bg-white button text-black"
+            >contact me <img src="img/arrow_outward.svg" alt="arrow"
+          /></a>
         </div>
+      </div>
     </div>
     <div class="intro">
-        <div class="container d-flex py-160 gap-24">
-            <div class="d-flex flex-direction-column intro-desc">
-                <h2 class="fs-0 text-white">Introduction</h2>
-                <p class="text-white fs-2 intro-text">Hi, I'm William Lee, a Front-End Developer with a passion for
-                    building beautiful and responsive websites that
-                    provide
-                    an optimal user experience.</p>
-                <div class="d-flex gap-16">
-                    <img src="img/sparkle-sm.png" alt="sparkle">
-                    <img src="img/sparkle-sm.png" alt="sparkle">
-                    <img src="img/sparkle-sm.png" alt="sparkle">
-                </div>
-            </div>
-            <img src="img/sparkle.png" alt="sparkle">
-            <img src="img/photographer.png" alt="photographer">
-            <img src="img/people-2.png" alt="people">
+      <div class="container d-flex py-160 gap-24">
+        <div class="d-flex flex-direction-column intro-desc">
+          <h2 class="fs-0 text-white">Introduction</h2>
+          <p class="text-white fs-2 intro-text">
+            Hi, I'm William Lee, a Front-End Developer with a passion for
+            building beautiful and responsive websites that provide an optimal
+            user experience.
+          </p>
+          <div class="d-flex gap-16">
+            <img src="img/sparkle-sm.png" alt="sparkle" />
+            <img src="img/sparkle-sm.png" alt="sparkle" />
+            <img src="img/sparkle-sm.png" alt="sparkle" />
+          </div>
         </div>
+        <img src="img/sparkle.png" alt="sparkle" />
+        <img src="img/photographer.png" alt="photographer" />
+        <img src="img/people-2.png" alt="people" />
+      </div>
     </div>
     <!-- ====================================================================== -->
     <div class="about bg-white">
-        <div class="container d-flex justify-content-space-between align-item-center py-160">
-            <div class="card d-flex d-flex-wrap">
+      <!-- About Me 區塊左方四張卡片之間是相似內容，且具有順序性，可以規劃成 ol>li*4 結構，可參考下圖調整結構 -->
+      <div
+        class="container d-flex justify-content-space-between align-item-center py-160"
+      >
+        <ol class="card d-flex d-flex-wrap">
+          <li class="carditem">
+            <p class="h3 pb-4">01</p>
+            <h3 class="fs-3 pb-4">Att tention to Detail</h3>
+            <p class="fs-4">Meticulous code analysis and optimization.</p>
+          </li>
+          <li class="carditem">
+            <p class="h3 pb-4">02</p>
+            <h3 class="fs-3 pb-4">Adaptability</h3>
+            <p class="fs-4">Swift learning of new technologies.</p>
+          </li>
+          <li class="carditem">
+            <p class="h3 pb-4">03</p>
+            <h3 class="fs-3 pb-4">Problem Solver</h3>
+            <p class="fs-4">Identifying and resolving issues.</p>
+          </li>
+          <li class="carditem">
+            <p class="h3 pb-4">04</p>
+            <h3 class="fs-3 pb-4">Team Player</h3>
+            <p class="fs-4">Collaborates and shares ideas.</p>
+          </li>
+        </ol>
+        <!-- <div class="card d-flex d-flex-wrap">
                 <div class="carditem">
                     <p class="h3 pb-4">01</p>
                     <h3 class="fs-3 pb-4">Att tention to Detail</h3>
@@ -82,56 +118,79 @@
                     <h3 class="fs-3 pb-4">Team Player</h3>
                     <p class="fs-4">Collaborates and shares ideas.</p>
                 </div>
-            </div>
-            <div class="aboutme">
-                <h2 class="fs-0 text-black mb-36">About Me</h2>
-                <p class="fs-2">With over 5 years of experience, I'm proficient in HTML, CSS, JavaScript, jQuery, and
-                    React. I
-                    have a strong understanding of user experience design and accessibility. I'm always learning new
-                    technologies and techniques to stay up-to-date in the field.</p>
-            </div>
+            </div> -->
+        <div class="aboutme">
+          <h2 class="fs-0 text-black mb-36">About Me</h2>
+          <p class="fs-2">
+            With over 5 years of experience, I'm proficient in HTML, CSS,
+            JavaScript, jQuery, and React. I have a strong understanding of user
+            experience design and accessibility. I'm always learning new
+            technologies and techniques to stay up-to-date in the field.
+          </p>
         </div>
+      </div>
     </div>
     <!-- ====================================================================== -->
     <div class="contactme py-96">
-        <div class="container d-flex justify-content-space-between align-item-center">
-            <h2 class="fs-0 text-white">CONTACT ME<img src="img/trending_flat_black_24dp 1.png" class="pl-12"
-                    alt="arrow"></h2>
-            <ul class="socialicon d-flex gap-20">
-                <li><a href="#"><img src="img/discord.png" alt="discord"></a></li>
-                <li><a href="#"><img src="img/instagram.png" alt="instagram"></a></li>
-                <li><a href="#"><img src="img/message.png" alt="message"></a></li>
-            </ul>
-        </div>
+      <div
+        class="container d-flex justify-content-space-between align-item-center"
+      >
+        <h2 class="fs-0 text-white">
+          CONTACT ME<img
+            src="img/trending_flat_black_24dp 1.png"
+            class="pl-12"
+            alt="arrow"
+          />
+        </h2>
+        <ul class="socialicon d-flex gap-20">
+          <li>
+            <a href="#"><img src="img/discord.png" alt="discord" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/instagram.png" alt="instagram" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/message.png" alt="message" /></a>
+          </li>
+        </ul>
+      </div>
     </div>
     <!-- ====================================================================== -->
     <div class="myproject bg-white">
-        <div class="container py-160">
-            <h2 class="fs-0 text-black project-title ml-auto pb-16">My Projects</h2>
+      <div class="container py-160">
+        <h2 class="fs-0 text-black project-title ml-auto pb-16">My Projects</h2>
 
+        <div class="d-flex gap-24">
+          <img src="img/Rectangle 10.png" alt="Rectangle" />
+          <div class="d-flex flex-direction-column gap-28">
             <div class="d-flex gap-24">
-                <img src="img/Rectangle 10.png" alt="Rectangle">
-                <div class="d-flex flex-direction-column gap-28">
-                    <div class="d-flex gap-24">
-                        <img src="img/Rectangle 15.png" alt="Rectangle">
-                        <div class="d-flex flex-direction-column justify-content-space-between align-item-start">
-                            <p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.</p>
-                            <a href="#" class="button text-white bg-black">SEE MORE <img src="img/arrow_outward-white.png" alt="arrow"></a>
-                        </div>
-                    </div>
-                    <div class="d-flex gap-24">
-                        <img src="img/Rectangle 14.png" alt="Rectangle"><img src="img/Rectangle 29.png" alt="Rectangle">
-                    </div>
-                </div>
+              <img src="img/Rectangle 15.png" alt="Rectangle" />
+              <div
+                class="d-flex flex-direction-column justify-content-space-between align-item-start"
+              >
+                <p>
+                  I've worked on a variety of websites, including e-commerce
+                  sites, blogs, and landing pages. I take pride in creating
+                  clean, efficient, and user-friendly code.
+                </p>
+                <a href="#" class="button text-white bg-black"
+                  >SEE MORE <img src="img/arrow_outward-white.png" alt="arrow"
+                /></a>
+              </div>
             </div>
-            
+            <div class="d-flex gap-24">
+              <img src="img/Rectangle 14.png" alt="Rectangle" /><img
+                src="img/Rectangle 29.png"
+                alt="Rectangle"
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- ====================================================================== -->
     <div class="footer text-center">
-        <p class="text-white py-40 fs-4">all rights reserved @hexschool2023</p>
-        
+      <p class="text-white py-40 fs-4">all rights reserved @hexschool2023</p>
     </div>
-</body>
-
+  </body>
 </html>
